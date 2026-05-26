@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokedex sedl
+   erhana</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div>
+        <h1>Pokedex</h1>
+        <p>Tampilkan data Pokémon dari <a href="https://pokeapi.co/" target="_blank" rel="noreferrer">PokeAPI</a>.</p>
+      </div>
+      <div class="search-box">
+        <input id="searchInput" type="text" placeholder="Cari nama atau ID Pokémon..." aria-label="Cari Pokémon" />
+        <button id="searchButton">Cari</button>
+      </div>
+    </header>
+
+    <section class="controls">
+      <button id="loadMoreButton">Muat lebih banyak Pokémon</button>
+    </section>
+
+    <section id="pokemonList" class="pokemon-list" aria-live="polite"></section>
+
+    <footer class="footer">
+      <p>Website sederhana untuk menampilkan data Pokémon dengan API resmi.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
